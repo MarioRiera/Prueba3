@@ -21,4 +21,5 @@ urlpatterns = [
     path('',include('core.urls')),
     path('consulta/',include('api.urls')),
     path('login/',include('login.urls')),
+
 ]
