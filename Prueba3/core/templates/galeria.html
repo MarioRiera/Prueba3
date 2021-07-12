@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+  <link href="style.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+  <title>Mecanic</title>
+
+  <!--JQUERY-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <!-- Los iconos tipo Solid de Fontawesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+  <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+  <!-- Nuestro css-->
+  <link rel="stylesheet" type="text/css" href="static/css/index.css" th:href="@{/css/index.css}">
+
+  <link rel="stylesheet" href="font.css">
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body onload="onLoad()">
+  <div class="social-bar">
+    <a href="https://github.com/Seba-Jimenez/proyectoPGY3121" class="icon icon-facebook" target="_blank"></a>
+    <a href="https://twitter.com" class="icon icon-twitter" target="_blank"></a>
+    <a href="https://www.youtube.com" class="icon icon-youtube" target="_blank"></a>
+    <a href="https://www.instagram.com" class="icon icon-instagram" target="_blank"></a>
+  </div>
+  <div id="menu-superior">
+
+  </div>
+  <section id="galeria">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="galeria-container">
+          <div class="galeria-details">
+            <a>
+              <h2>Cambio filtro de bencina</h2>
+            </a>
+            <a>
+              <p>Mantención Premium básica para vehículo: Cambio de aceite + filtro de aceite + filtro de aire +
+                chequeo completo+ limpieza y ajuste de frenos</p>
+            </a>
+          </div>
+          <img src="fotos/cambio filtro de bencina.png" class="img-fluid" alt="galeria 1" style="width: 800px;">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="galeria-container">
+          <div class="galeria-details">
+            <a>
+              <h2>Cambio filtro de aire</h2>
+            </a>
+            <a>
+              <p>Esta sustitución se realiza debido a que el polvo que se encuentra en el aire llegase a entrar al
+                motor taparía los conductos del carburador provocando fallas y daños en el motor.</p>
+            </a>
+          </div>
+          <img src="fotos/Cambio filtro de aire.jpg" class="img-fluid" alt="galeria 1" style="width: 800px;">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="galeria-container">
+          <div class="galeria-details">
+            <a>
+              <h2>Cambio de Aceite Autos Santiago</h2>
+            </a>
+            <a>
+              <p>Demos vuelta tu auto y veamos realmente sus detalles. Incluye limpieza y ajuste de frenos.</p>
+            </a>
+          </div>
+          <img src="fotos/Cambio de Aceite Autos.jpg" class="img-fluid" alt="galeria 1" style="width: 800px;">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="galeria-container">
+          <div class="galeria-details">
+            <a>
+              <h2>Reparación de Frenos</h2>
+            </a>
+            <a>
+              <p>Para un efectivo funcionamiento de los frenos de tu automóvil te ofrecemos el servicio de: cambio de
+                pastillas, líquido de frenos, balata, rectificación de discos y tambores.</p>
+            </a>
+          </div>
+          <img src="fotos/Reparación de Frenos.jpg" class="img-fluid" alt="galeria 1" style="width: 800px;">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="galeria-container">
+          <div class="galeria-details">
+            <a>
+              <h2>Afinamiento Motores</h2>
+            </a>
+            <a>
+              <p>El afinamiento es un trabajo que se realiza con la finalidad de restablecer las condiciones del
+                funcionamiento del motor. Nuestro objetivo es recuperar y/o mantener el correcto funcionamiento y
+                eficiencia de su vehículo, este objetivo es alcanzado mediante el reemplazo de partes que por su uso
+                habitual se desgastan y/o pierden su efectividad.</p>
+            </a>
+          </div>
+          <img src="fotos/Afinamiento Motores.jpg" class="img-fluid" alt="galeria 1" style="width: 800px;">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="galeria-container">
+          <div class="galeria-details">
+            <a>
+              <h2>Mantención para 10.000km y 20.000 km</h2>
+            </a>
+          </div>
+          <img src="fotos/Mantención para 10.000km y 20.000 km.jpg" class="img-fluid" alt="galeria 1"
+            style="width: 800px;">
+        </div>
+      </div>
+    </div>
+  <script>
+    $(function(){
+        $("#menu-superior").load("menu-superior.html");
+    });
+  </script> 
+  </section>
+</body>
