@@ -16,5 +16,8 @@ def galeria(request):
 def nosotros(request):
     return render(request,'nosotros.html')
 
+def formulario(request):
+    return render(request,'formulario.html')
+
 
 
