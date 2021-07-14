@@ -1,3 +1,4 @@
+from core.forms import VehiculoForm
 from core.models import Vehiculo
 from django.shortcuts import render
 
@@ -17,7 +18,25 @@ def nosotros(request):
     return render(request,'nosotros.html')
 
 def formulario(request):
-    return render(request,'formulario.html')
+    datos={
+        'form':VehiculoForm
+    }
+
+    if request.method == 'POST':
+        formu = VehiculoForm(request.POST)
+        if formu.is_valid:
+            formu.save()
+            datos['mensaje'] = "Guardado correctamente"
 
 
+
+    return render(request,'formulario.html',datos)
+
+def formulario_mod(request,id):
+    vehiculo = Vehiculo.objects.get(patente = id)
+    datos={
+        'form':VehiculoForm(instance=vehiculo)
+    }
+    
+    return render(request,'formulario_mod.html',datos)
 
