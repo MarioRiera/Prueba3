@@ -13,4 +13,4 @@ class Vehiculo(models.Model):
     modelo = models.CharField(max_length=20,null=True,blank=True, verbose_name="Modelo")
     categoria = models.ForeignKey(Categoria, on_delete=models.CASCADE)
     def __str__(self):
-        return self.nombreCategoria
+        return self.patente
